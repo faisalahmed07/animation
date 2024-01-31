@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css animation</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+
+
+    <section class="boxAnimation">
+        <div class="intro">
+            <h1>Well Come To My World</h1>
+            <h3 class="about_this">Frist Box</h3>
+        </div>
+        <div class="box "></div>
+        <a href="#" class="rotate ">Click Me To Rotate <i class="fa-solid fa-rotate"></i></a>
+    </section>
+
+    <section class="cube-content">
+        <h2 class="second-box">2nd Box</h2>
+        <div class="container">
+            <div class="box_for_cube">
+                <div class="cube"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="loaderCnt">
+        <svg>
+            <filter id="gooey">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+                <feColorMatrix values="
+                1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 20 -10"></feColorMatrix>
+            </filter>
+        </svg>
+        <div class="loader">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+            <span style="--i:4"></span>
+            <span style="--i:5"></span>
+            <span style="--i:6"></span>
+            <span style="--i:7"></span>
+            <span style="--i:8"></span>
+            <span class="rotateForLoader" style="--j:0"></span>
+            <span class="rotateForLoader" style="--j:1"></span>
+            <span class="rotateForLoader" style="--j:2"></span>
+            <span class="rotateForLoader" style="--j:3"></span>
+            <span class="rotateForLoader" style="--j:4"></span>
+        </div>
+    </section>
+    
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+</html>
